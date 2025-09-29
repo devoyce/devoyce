@@ -10,19 +10,21 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "@devoyce/ui": "workspace:*",
+    "lucide": "^0.544.0",
+    "lucide-react": "^0.475.0",
     "next": "15.5.4",
-    "@devoyce/ui": "workspace:*"
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@devoyce/eslint-config": "workspace:*",
+    "@devoyce/prettier": "workspace:*",
+    "@devoyce/typescript-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@devoyce/eslint-config": "workspace:*",
-    "@devoyce/typescript-config": "workspace:*",
-    "@devoyce/prettier": "workspace:*"
+    "typescript": "^5"
   },
   "prettier": "@devoyce/prettier"
 }

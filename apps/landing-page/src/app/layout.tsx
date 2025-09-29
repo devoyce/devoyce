@@ -1,13 +1,21 @@
-import "./globals.css";
+import '@devoyce/ui/globals.css'
+
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+})
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+    <html lang="en" className={inter.className}>
+      <body className="font bg-white text-slate-900 antialiased">
+        {children}
+      </body>
     </html>
-  );
+  )
 }
