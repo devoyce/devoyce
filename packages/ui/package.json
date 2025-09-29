@@ -26,6 +26,7 @@
     "@types/react-dom": "^19.1.7",
     "@devoyce/eslint-config": "workspace:*",
     "@devoyce/typescript-config": "workspace:*",
+    "@devoyce/prettier": "workspace:*",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.9.2"
   },
@@ -35,5 +36,6 @@
     "./lib/*": "./src/lib/*.ts",
     "./components/*": "./src/components/*.tsx",
     "./hooks/*": "./src/hooks/*.ts"
-  }
+  },
+  "prettier": "@devoyce/prettier"
 }
