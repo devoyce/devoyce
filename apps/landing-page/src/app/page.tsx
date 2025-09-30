@@ -28,7 +28,6 @@ import {
   Send,
   Settings,
   Shield,
-  ShieldCheck,
   Sparkles,
   Star,
   UserPlus,
@@ -98,7 +97,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative my-12">
               <div className="rounded-md border border-slate-200 bg-white shadow-sm">
                 <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
                   <div className="flex items-center gap-2 text-sm text-slate-700">
@@ -268,12 +267,11 @@ export default function Home() {
                   <div className="rounded-md border border-slate-200">
                     <div className="flex items-center justify-between border-b border-slate-200 px-3 py-2">
                       <div className="flex items-center gap-2 text-sm text-slate-800">
-                        <FileText className="h-4 w-4" />
+                        <FileText className="h-4 w-4 stroke-1" />
                         Invoice • Apr 2025
                       </div>
-                      <span className="inline-flex items-center gap-1 text-xs text-slate-600">
-                        <Zap className="h-3.5 w-3.5" />
-                        Auto-generated
+                      <span className="inline-flex items-center gap-1 whitespace-nowrap text-xs text-slate-600">
+                        <Zap className="h-3.5 w-3.5 stroke-1" /> Auto-generated
                       </span>
                     </div>
                     <div className="space-y-3 p-3">
@@ -307,31 +305,8 @@ export default function Home() {
                           Edit
                         </button>
                       </div>
-
-                      <div className="mt-1 rounded-md border border-slate-200">
-                        <div className="flex items-center justify-between px-3 py-2">
-                          <span className="text-xs text-slate-700">
-                            Payout trend
-                          </span>
-                          <span className="text-xs text-slate-600">
-                            Last 6 months
-                          </span>
-                        </div>
-                        <div className="px-3 pb-3">
-                          <div className="relative h-28">
-                            <canvas id="payoutChart"></canvas>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-4 -left-4 hidden md:flex">
-                <div className="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 shadow-sm">
-                  <ShieldCheck className="h-4 w-4" />
-                  Role-based access for org admins and members
                 </div>
               </div>
             </div>
