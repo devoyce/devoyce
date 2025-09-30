@@ -1,6 +1,6 @@
-import { Button } from '@devoyce/ui/components/button'
 import { Check, Gift } from 'lucide-react'
 import { FC, memo } from 'react'
+import WaitlistForm from './components/waitlist-form'
 
 const waitlist: FC = () => {
   return (
@@ -18,22 +18,7 @@ const waitlist: FC = () => {
               Be first to try Devoyce and lock in early access pricing.
             </p>
 
-            <form className="mt-6 max-w-xl">
-              <div className="flex gap-3 sm:grid-cols-3">
-                <input
-                  type="email"
-                  placeholder="yourbest@email.com"
-                  className="focus:ring-primary bg-background h-11 flex-1 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
-                />
-                <Button type="submit" size="lg">
-                  Request access
-                </Button>
-              </div>
-              <p className="mt-3 text-xs text-slate-600">
-                By signing up, you agree to receive product updates. Unsubscribe
-                anytime.
-              </p>
-            </form>
+            <WaitlistForm />
           </div>
 
           <div className="lg:col-span-1">

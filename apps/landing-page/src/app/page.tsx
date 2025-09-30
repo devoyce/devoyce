@@ -6,7 +6,7 @@ import HowItWorks from '@/components/how-it-works'
 import PreLaunchHeader from '@/components/pre-launch-header'
 import Pricing from '@/components/pricing'
 import Product from '@/components/product'
-import Waitlist from '@/components/waitlist'
+import Waitlist from '@/components/waitlist/waitlist'
 
 export default function Home() {
   return (
