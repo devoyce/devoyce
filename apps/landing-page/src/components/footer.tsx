@@ -18,12 +18,12 @@ const footer: FC = () => {
             © <span id="year"></span> Devoyce, Inc. All rights reserved.
           </div>
           <div className="flex items-center gap-6 text-sm text-slate-700">
-            {/* <a href="#" className="hover:text-slate-900">
+            {/* <Link href="#" className="hover:text-slate-900">
                 Privacy
-              </a>
-              <a href="#" className="hover:text-slate-900">
+              </Link>
+              <Link href="#" className="hover:text-slate-900">
                 Terms
-              </a> */}
+              </Link> */}
             <Link
               href="https://github.com/devoyce"
               target="_blank"

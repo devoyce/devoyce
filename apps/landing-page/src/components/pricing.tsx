@@ -1,5 +1,6 @@
 import { Button } from '@devoyce/ui/components/button'
 import { Check, Star } from 'lucide-react'
+import Link from 'next/link'
 import { FC, memo } from 'react'
 
 const pricing: FC = () => {
@@ -43,7 +44,7 @@ const pricing: FC = () => {
               </li>
             </ul>
             <Button asChild variant="secondary" className="mt-5 justify-center">
-              <a href="#waitlist">Join the waitlist</a>
+              <Link href="#waitlist">Join the waitlist</Link>
             </Button>
           </div>
 
@@ -86,7 +87,7 @@ const pricing: FC = () => {
               </li>
             </ul>
             <Button asChild className="mt-5 justify-center">
-              <a href="#waitlist">Join the waitlist</a>
+              <Link href="#waitlist">Join the waitlist</Link>
             </Button>
           </div>
 
@@ -117,7 +118,7 @@ const pricing: FC = () => {
               </li>
             </ul>
             <Button asChild variant="secondary" className="mt-5 justify-center">
-              <a href="#waitlist">Join the waitlist</a>
+              <Link href="#waitlist">Join the waitlist</Link>
             </Button>
           </div>
         </div>

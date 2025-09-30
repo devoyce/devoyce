@@ -15,7 +15,7 @@ const waitlist: FC = () => {
               Join the waitlist
             </h3>
             <p className="mt-3 text-slate-600">
-              Be first to try Actify and lock in early access pricing.
+              Be first to try Devoyce and lock in early access pricing.
             </p>
 
             <form className="mt-6 max-w-xl">

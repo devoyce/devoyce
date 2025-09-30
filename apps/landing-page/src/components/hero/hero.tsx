@@ -2,6 +2,7 @@ import { Button } from '@devoyce/ui/components/button'
 import { Bell, CalendarCheck, FileText, Users } from 'lucide-react'
 import { FC, memo } from 'react'
 import HeroIllustration from './components/hero-illustration'
+import Link from 'next/link'
 
 const Hero: FC = () => {
   return (
@@ -29,10 +30,10 @@ const Hero: FC = () => {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg">
-                <a href="#waitlist">Get early access</a>
+                <Link href="#waitlist">Get early access</Link>
               </Button>
               <Button asChild variant="secondary" size="lg">
-                <a href="#product">See how it works</a>
+                <Link href="#product">See how it works</Link>
               </Button>
             </div>
 
