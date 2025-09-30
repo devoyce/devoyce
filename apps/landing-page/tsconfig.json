@@ -1,5 +1,11 @@
 {
   "extends": "@devoyce/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
   "include": [
     "**/*.ts",
     "**/*.tsx",

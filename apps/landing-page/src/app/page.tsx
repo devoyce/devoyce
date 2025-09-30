@@ -6,22 +6,28 @@ import {
   CalendarCheck,
   CalendarDays,
   CalendarPlus,
+  CalendarRange,
   Check,
   CheckCircle,
   ChevronLeft,
   ChevronRight,
+  Clock8,
+  CreditCard,
   Download,
   FileText,
   Gift,
   History,
+  KeyRound,
   LayoutDashboard,
   Link,
   Link2,
+  MailCheck,
   Pencil,
   Plus,
   Receipt,
   Send,
   Settings,
+  Shield,
   ShieldCheck,
   Sparkles,
   Star,
@@ -30,65 +36,14 @@ import {
   Zap,
 } from 'lucide-react'
 import { Fragment } from 'react'
+import PreLaunchHeader from '@/components/PreLaunchHeader'
+import Header from '@/components/Header'
 
 export default function Home() {
   return (
     <Fragment>
-      <div className="bg-secondary-background">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-center justify-center gap-3 py-2 text-sm">
-            <span className="inline-flex items-center rounded-md border border-slate-200 px-2.5 py-1 text-slate-700">
-              Pre-launch
-            </span>
-            <p className="text-slate-600">
-              Join the waitlist for early access pricing.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex h-16 items-center justify-between">
-            <a href="#" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md border border-slate-300 text-sm font-semibold tracking-tight text-slate-900">
-                y
-              </div>
-              <span className="text-sm font-semibold tracking-tight md:text-base">
-                Devoyce
-              </span>
-            </a>
-            <nav className="hidden items-center gap-8 text-sm text-slate-700 md:flex">
-              <a href="#product" className="hover:text-slate-900">
-                Product
-              </a>
-              <a href="#how" className="hover:text-slate-900">
-                How it works
-              </a>
-              <a href="#features" className="hover:text-slate-900">
-                Features
-              </a>
-              <a href="#pricing" className="hover:text-slate-900">
-                Pricing
-              </a>
-            </nav>
-            <div className="flex items-center gap-3">
-              <a
-                href="#"
-                className="hidden h-9 items-center rounded-md border border-slate-300 px-3 text-sm text-slate-800 hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-2 md:inline-flex"
-              >
-                Sign in
-              </a>
-              <a
-                href="#waitlist"
-                className="bg-primary focus:ring-primary inline-flex h-9 items-center rounded-md px-3 text-sm text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-offset-2"
-              >
-                Join waitlist
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
+      <PreLaunchHeader />
+      <Header />
 
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pb-12 pt-14 md:pb-16">
@@ -571,6 +526,79 @@ export default function Home() {
         </div>
       </section>
 
+      <section
+        id="features"
+        className="bg-secondary-background border-y border-slate-200 py-14 md:py-20"
+      >
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="max-w-2xl">
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+              Features
+            </h2>
+            <p className="mt-3 text-slate-600">
+              Purpose-built for employee and contractor workflows in one place.
+            </p>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-md border border-slate-200 bg-white p-5">
+              <div className="flex items-center gap-2 text-slate-800">
+                <CalendarRange className="h-5 w-5" />
+                <span className="font-medium">Leave quotas</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                Track available leave days per member and per policy.
+              </p>
+            </div>
+            <div className="rounded-md border border-slate-200 bg-white p-5">
+              <div className="flex items-center gap-2 text-slate-800">
+                <Clock8 className="h-5 w-5" />
+                <span className="font-medium">Working day rules</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                Auto-compute business days across regions and holidays.
+              </p>
+            </div>
+            <div className="rounded-md border border-slate-200 bg-white p-5">
+              <div className="flex items-center gap-2 text-slate-800">
+                <CreditCard className="h-5 w-5" />
+                <span className="font-medium">Invoice approvals</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                Members review drafts; org admins get notified on approval.
+              </p>
+            </div>
+            <div className="rounded-md border border-slate-200 bg-white p-5">
+              <div className="flex items-center gap-2 text-slate-800">
+                <MailCheck className="h-5 w-5" />
+                <span className="font-medium">Notifications</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                Email alerts for submissions, approvals, and payments.
+              </p>
+            </div>
+            <div className="rounded-md border border-slate-200 bg-white p-5">
+              <div className="flex items-center gap-2 text-slate-800">
+                <KeyRound className="h-5 w-5" />
+                <span className="font-medium">Roles &amp; access</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                Separate orgs and granular roles for admins and members.
+              </p>
+            </div>
+            <div className="rounded-md border border-slate-200 bg-white p-5">
+              <div className="flex items-center gap-2 text-slate-800">
+                <Shield className="h-5 w-5" />
+                <span className="font-medium">Security</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                Best practices across data isolation and audit trails.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="pricing" className="py-14 md:py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
@@ -715,16 +743,11 @@ export default function Home() {
               </p>
 
               <form className="mt-6 max-w-xl">
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-                  <input
-                    type="text"
-                    placeholder="Your name"
-                    className="focus:ring-primary col-span-1 h-11 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
-                  />
+                <div className="flex gap-3 sm:grid-cols-3">
                   <input
                     type="email"
                     placeholder="yourbest@email.com"
-                    className="focus:ring-primary col-span-2 h-11 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
+                    className="focus:ring-primary bg-background h-11 flex-1 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
                   />
                   <button
                     type="submit"
