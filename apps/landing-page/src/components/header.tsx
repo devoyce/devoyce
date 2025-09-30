@@ -29,9 +29,9 @@ const Header: FC = () => {
             </a>
           </nav>
           <div className="flex items-center gap-3">
-            <Button size="sm" variant="secondary" asChild>
+            {/* <Button size="sm" variant="secondary" asChild>
               <a href="#">Sign in</a>
-            </Button>
+            </Button> */}
             <Button size="sm" asChild>
               <a href="#waitlist">Join waitlist</a>
             </Button>
