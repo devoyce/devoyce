@@ -1,3 +1,4 @@
+import { Button } from '@devoyce/ui/components/button'
 import { Check, Gift } from 'lucide-react'
 import { FC, memo } from 'react'
 
@@ -24,12 +25,9 @@ const waitlist: FC = () => {
                   placeholder="yourbest@email.com"
                   className="focus:ring-primary bg-background h-11 flex-1 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
                 />
-                <button
-                  type="submit"
-                  className="bg-primary focus:ring-primary col-span-1 h-11 rounded-md px-4 text-sm text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-offset-2"
-                >
+                <Button type="submit" size="lg">
                   Request access
-                </button>
+                </Button>
               </div>
               <p className="mt-3 text-xs text-slate-600">
                 By signing up, you agree to receive product updates. Unsubscribe
