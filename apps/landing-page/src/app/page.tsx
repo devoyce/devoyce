@@ -34,7 +34,7 @@ import { Fragment } from 'react'
 export default function Home() {
   return (
     <Fragment>
-      <div className="bg-[#F2F4F5]">
+      <div className="bg-secondary-background">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-center justify-center gap-3 py-2 text-sm">
             <span className="inline-flex items-center rounded-md border border-slate-200 px-2.5 py-1 text-slate-700">
@@ -81,7 +81,7 @@ export default function Home() {
               </a>
               <a
                 href="#waitlist"
-                className="inline-flex h-9 items-center rounded-md bg-[#18B85B] px-3 text-sm text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-[#18B85B] focus:ring-offset-2"
+                className="bg-primary focus:ring-primary inline-flex h-9 items-center rounded-md px-3 text-sm text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-offset-2"
               >
                 Join waitlist
               </a>
@@ -115,7 +115,7 @@ export default function Home() {
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#waitlist"
-                  className="inline-flex h-11 items-center justify-center rounded-md bg-[#18B85B] px-5 text-sm font-medium text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-[#18B85B] focus:ring-offset-2"
+                  className="bg-primary focus:ring-primary inline-flex h-11 items-center justify-center rounded-md px-5 text-sm font-medium text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-offset-2"
                 >
                   Get early access
                 </a>
@@ -154,7 +154,7 @@ export default function Home() {
                     <button className="inline-flex h-8 items-center rounded-md border border-slate-300 px-2.5 text-xs text-slate-800 hover:bg-slate-50">
                       Export
                     </button>
-                    <button className="inline-flex h-8 items-center rounded-md bg-[#18B85B] px-2.5 text-xs text-white hover:brightness-[0.95]">
+                    <button className="bg-primary inline-flex h-8 items-center rounded-md px-2.5 text-xs text-white hover:brightness-[0.95]">
                       Add Leave
                     </button>
                   </div>
@@ -199,7 +199,7 @@ export default function Home() {
                         <div className="flex h-8 items-center justify-center rounded-md border border-slate-200">
                           3
                         </div>
-                        <div className="flex h-8 items-center justify-center rounded-md border border-slate-200 bg-[#F2F4F5]">
+                        <div className="bg-secondary-background flex h-8 items-center justify-center rounded-md border border-slate-200">
                           4
                         </div>
                         <div className="flex h-8 items-center justify-center rounded-md border border-slate-200">
@@ -209,13 +209,13 @@ export default function Home() {
                           6
                         </div>
 
-                        <div className="flex h-8 items-center justify-center rounded-md border border-slate-200 bg-[#E9FAF1] text-[#18B85B]">
+                        <div className="text-primary bg-muted-primary flex h-8 items-center justify-center rounded-md border border-slate-200">
                           7
                         </div>
-                        <div className="flex h-8 items-center justify-center rounded-md border border-slate-200 bg-[#E9FAF1] text-[#18B85B]">
+                        <div className="text-primary bg-muted-primary flex h-8 items-center justify-center rounded-md border border-slate-200">
                           8
                         </div>
-                        <div className="flex h-8 items-center justify-center rounded-md border border-slate-200 bg-[#E9FAF1] text-[#18B85B]">
+                        <div className="text-primary bg-muted-primary flex h-8 items-center justify-center rounded-md border border-slate-200">
                           9
                         </div>
                         <div className="flex h-8 items-center justify-center rounded-md border border-slate-200">
@@ -297,9 +297,9 @@ export default function Home() {
                           4
                         </div>
                       </div>
-                      <div className="mt-3 flex items-center justify-between text-[12px] text-slate-600">
+                      <div className="mt-3 flex items-center justify-between text-xs text-slate-600">
                         <div className="inline-flex items-center gap-2">
-                          <span className="inline-block h-2 w-2 rounded-[2px] bg-[#18B85B]"></span>{' '}
+                          <span className="bg-primary inline-block h-2 w-2 rounded-[2px]"></span>{' '}
                           Leave days
                         </div>
                         <span className="inline-flex items-center gap-1">
@@ -343,7 +343,7 @@ export default function Home() {
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <button className="inline-flex h-8 items-center rounded-md bg-[#18B85B] px-2.5 text-xs text-white hover:brightness-[0.95]">
+                        <button className="bg-primary inline-flex h-8 items-center rounded-md px-2.5 text-xs text-white hover:brightness-[0.95]">
                           <CheckCircle className="mr-1.5 h-4 w-4" />
                           Approve
                         </button>
@@ -386,7 +386,7 @@ export default function Home() {
 
       <section
         id="product"
-        className="border-t border-slate-200 bg-[#F2F4F5] py-14 md:py-20"
+        className="bg-secondary-background border-t border-slate-200 py-14 md:py-20"
       >
         <div className="mx-auto max-w-7xl px-6">
           <div className="max-w-2xl">
@@ -422,7 +422,7 @@ export default function Home() {
                         <div className="mt-1 text-sm font-medium">
                           Ava Patel
                         </div>
-                        <div className="mt-2 inline-flex items-center gap-1 rounded-md border border-[#BFEFD5] bg-[#E9FAF1] px-1.5 py-1 text-[11px] text-[#18B85B]">
+                        <div className="border-lighter-primary bg-muted-primary text-primary mt-2 inline-flex items-center gap-1 rounded-md border px-1.5 py-1 text-[11px]">
                           15 days left
                         </div>
                       </div>
@@ -444,7 +444,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="mt-4 flex items-center gap-2">
-                      <button className="inline-flex h-9 items-center rounded-md bg-[#18B85B] px-3 text-sm text-white hover:brightness-[0.95]">
+                      <button className="bg-primary inline-flex h-9 items-center rounded-md px-3 text-sm text-white hover:brightness-[0.95]">
                         <Plus className="mr-1.5 h-4 w-4" />
                         Add leave day
                       </button>
@@ -492,7 +492,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-4 flex items-center gap-2">
-                  <button className="inline-flex h-9 items-center rounded-md bg-[#18B85B] px-3 text-sm text-white hover:brightness-[0.95]">
+                  <button className="bg-primary inline-flex h-9 items-center rounded-md px-3 text-sm text-white hover:brightness-[0.95]">
                     <Send className="mr-1.5 h-4 w-4" /> Submit for approval
                   </button>
                   <button className="inline-flex h-9 items-center rounded-md border border-slate-300 px-3 text-sm text-slate-800 hover:bg-slate-50">
@@ -578,7 +578,7 @@ export default function Home() {
               Simple pricing
             </h2>
             <p className="mt-3 text-slate-600">
-              Transparent per‑member pricing with everything you need.
+              Transparent per-member pricing with everything you need.
             </p>
           </div>
 
@@ -598,14 +598,14 @@ export default function Home() {
               </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Up to 1 organization
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />5 members
+                  <Check className="text-primary h-4 w-4" />5 members
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Leave tracking
                 </li>
               </ul>
@@ -617,8 +617,8 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex flex-col rounded-md border-2 border-[#18B85B] bg-white p-5">
-              <div className="mb-2 inline-flex items-center gap-2 text-xs text-[#18B85B]">
+            <div className="border-primary flex flex-col rounded-md border-2 bg-white p-5">
+              <div className="text-primary mb-2 inline-flex items-center gap-2 text-xs">
                 <Star className="h-4 w-4" /> Recommended
               </div>
               <h3 className="text-lg font-medium">Growth</h3>
@@ -635,29 +635,29 @@ export default function Home() {
               </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Unlimited organizations
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Unlimited members
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Google Calendar sync
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Invoice automation
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Approvals &amp; notifications
                 </li>
               </ul>
               <a
                 href="#waitlist"
-                className="mt-5 inline-flex h-10 items-center justify-center rounded-md bg-[#18B85B] px-3 text-sm text-white hover:brightness-[0.95]"
+                className="bg-primary mt-5 inline-flex h-10 items-center justify-center rounded-md px-3 text-sm text-white hover:brightness-[0.95]"
               >
                 Start trial
               </a>
@@ -677,15 +677,15 @@ export default function Home() {
               </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-700">
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   SSO and audit logs
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Data residency options
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-[#18B85B]" />
+                  <Check className="text-primary h-4 w-4" />
                   Priority support
                 </li>
               </ul>
@@ -702,7 +702,7 @@ export default function Home() {
 
       <section
         id="waitlist"
-        className="border-t border-slate-200 bg-[#F2F4F5] py-14 md:py-20"
+        className="bg-secondary-background border-t border-slate-200 py-14 md:py-20"
       >
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3">
@@ -719,16 +719,16 @@ export default function Home() {
                   <input
                     type="text"
                     placeholder="Your name"
-                    className="col-span-1 h-11 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#18B85B] focus:ring-offset-2 sm:col-span-1"
+                    className="focus:ring-primary col-span-1 h-11 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
                   />
                   <input
                     type="email"
                     placeholder="yourbest@email.com"
-                    className="col-span-2 h-11 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#18B85B] focus:ring-offset-2 sm:col-span-1"
+                    className="focus:ring-primary col-span-2 h-11 rounded-md border border-slate-300 px-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-span-1"
                   />
                   <button
                     type="submit"
-                    className="col-span-1 h-11 rounded-md bg-[#18B85B] px-4 text-sm text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-[#18B85B] focus:ring-offset-2"
+                    className="bg-primary focus:ring-primary col-span-1 h-11 rounded-md px-4 text-sm text-white hover:brightness-[0.95] focus:outline-none focus:ring-2 focus:ring-offset-2"
                   >
                     Request access
                   </button>
@@ -748,15 +748,15 @@ export default function Home() {
                 </div>
                 <ul className="mt-3 space-y-2 text-sm text-slate-700">
                   <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-[#18B85B]" />
+                    <Check className="text-primary h-4 w-4" />
                     30% off first year
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-[#18B85B]" />
+                    <Check className="text-primary h-4 w-4" />
                     Priority onboarding
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-[#18B85B]" />
+                    <Check className="text-primary h-4 w-4" />
                     Direct feedback channel
                   </li>
                 </ul>
