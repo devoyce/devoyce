@@ -18,18 +18,18 @@ const pricing: FC = () => {
 
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="flex flex-col rounded-md border border-slate-200 bg-white p-5">
-            <h3 className="text-lg font-medium">Starter</h3>
+            <h3 className="text-lg font-medium">Free tier</h3>
             <p className="mt-1 text-sm text-slate-600">
               For small teams getting started
             </p>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <div className="flex items-end gap-1">
                 <span className="text-3xl font-semibold tracking-tight">
                   $0
                 </span>
                 <span className="text-sm text-slate-600">/ org / mo</span>
               </div>
-            </div>
+            </div> */}
             <ul className="mt-4 space-y-2 text-sm text-slate-700">
               <li className="flex items-center gap-2">
                 <Check className="text-primary h-4 w-4" />
@@ -56,14 +56,14 @@ const pricing: FC = () => {
             <p className="mt-1 text-sm text-slate-600">
               For growing organizations
             </p>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <div className="flex items-end gap-1">
                 <span className="text-3xl font-semibold tracking-tight">
                   $8
                 </span>
                 <span className="text-sm text-slate-600">/ member / mo</span>
               </div>
-            </div>
+            </div> */}
             <ul className="mt-4 space-y-2 text-sm text-slate-700">
               <li className="flex items-center gap-2">
                 <Check className="text-primary h-4 w-4" />
@@ -96,13 +96,13 @@ const pricing: FC = () => {
             <p className="mt-1 text-sm text-slate-600">
               Advanced needs and support
             </p>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <div className="flex items-end gap-1">
                 <span className="text-3xl font-semibold tracking-tight">
                   Custom
                 </span>
               </div>
-            </div>
+            </div> */}
             <ul className="mt-4 space-y-2 text-sm text-slate-700">
               <li className="flex items-center gap-2">
                 <Check className="text-primary h-4 w-4" />
