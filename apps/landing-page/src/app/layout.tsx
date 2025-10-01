@@ -1,6 +1,7 @@
 import '@devoyce/ui/globals.css'
 
 import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="font antialiased">{children}</body>
+      <body className="font antialiased">
+        {children}
+        <Toaster position="bottom-center" />
+      </body>
     </html>
   )
 }

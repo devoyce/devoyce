@@ -19,7 +19,7 @@ export const WaitlistEmailTemplate = () => (
           <Text>Devoyce</Text>
           <Hr style={hr} />
           <Text style={paragraph}>
-            Thanks for entering the wishlist for Devoyce. You are now enrolled
+            Thanks for entering the waitlist for Devoyce. You are now enrolled
             on our list of early adopters and will be among the first to hear
             when we launch!
           </Text>

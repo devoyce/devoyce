@@ -4,12 +4,8 @@ import WaitlistEmailTemplate from '@/components/waitlist/components/email-templa
 import { Resend } from 'resend'
 import z from 'zod'
 
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
-}
-
 export async function sendEmail(
-  initialState: { id: string | null },
+  _initialState: { id: string | null },
   formData: FormData
 ) {
   const resend = new Resend(process.env.RESEND_API_KEY)
@@ -22,16 +18,12 @@ export async function sendEmail(
 
   if (!validatedEmail) return { id: null }
 
-  // const { data } = await resend.emails.send({
-  //   from: 'Devoyce <business@devoyce.com>',
-  //   to: validatedEmail,
-  //   subject: 'You are now on the waitlist! 🎉',
-  //   react: WaitlistEmailTemplate(),
-  // })
-
-  await sleep(2000)
-
-  const data = { id: 'mock-id-123' } // Mocked response for demonstration
+  const { data } = await resend.emails.send({
+    from: 'Devoyce <business@devoyce.com>',
+    to: validatedEmail,
+    subject: 'You are now on the waitlist! 🎉',
+    react: WaitlistEmailTemplate(),
+  })
 
   if (data?.id) {
     return { id: data.id }

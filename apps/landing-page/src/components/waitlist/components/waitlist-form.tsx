@@ -14,7 +14,7 @@ const WaitlistForm: FC = () => {
   const [state, formAction, pending] = useActionState(sendEmail, initialState)
 
   useEffect(() => {
-    if (state.id) {
+    if (state.id && !pending) {
       toast('You are now on the waitlist! 🎉', {
         description: 'We will notify you when we launch.',
         duration: 8000,
