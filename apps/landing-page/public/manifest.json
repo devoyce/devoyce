@@ -1,0 +1,23 @@
+{
+  "name": "Devoyce - Automate leave and invoices for employees and contractors",
+  "short_name": "Devoyce",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "theme_color": "#18B85B",
+  "background_color": "##FFFFFF",
+  "start_url": "/",
+  "description": "Centralize leave requests, auto-generate invoices by rate and working days, and notify organizations upon approval. Simple, reliable, and built for multi-org SaaS.",
+  "display": "fullscreen"
+}
