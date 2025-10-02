@@ -7,12 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "email:dev": "email dev"
   },
   "dependencies": {
     "@devoyce/ui": "workspace:*",
     "@react-email/components": "^0.5.5",
     "class-variance-authority": "^0.7.1",
+    "dotenv": "^17.2.3",
     "lucide": "^0.544.0",
     "lucide-react": "^0.475.0",
     "next": "15.5.4",
@@ -26,6 +28,7 @@
     "@devoyce/eslint-config": "workspace:*",
     "@devoyce/prettier": "workspace:*",
     "@devoyce/typescript-config": "workspace:*",
+    "@react-email/preview-server": "4.2.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

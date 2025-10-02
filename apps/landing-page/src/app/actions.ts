@@ -1,6 +1,6 @@
 'use server'
 
-import WaitlistEmailTemplate from '@/components/waitlist/components/email-template'
+import WaitlistEmailTemplate from 'emails/waitlist-email-template'
 import { Resend } from 'resend'
 import z from 'zod'
 
