@@ -2,15 +2,16 @@ import { Button } from '@devoyce/ui/components/button'
 import Link from 'next/link'
 import { FC, memo } from 'react'
 
+import logoIcon from '@/assets/logo.svg'
+import Image from 'next/image'
+
 const Header: FC = () => {
   return (
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
           <Link href="./" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md border border-slate-300 text-sm font-semibold tracking-tight text-slate-900">
-              y
-            </div>
+            <Image src={logoIcon} alt="Devoyce" />
             <span className="text-sm font-semibold tracking-tight md:text-base">
               Devoyce
             </span>

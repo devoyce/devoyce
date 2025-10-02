@@ -1,5 +1,8 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC, memo } from 'react'
+
+import logoIcon from '@/assets/logo.svg'
 
 const footer: FC = () => {
   return (
@@ -7,9 +10,8 @@ const footer: FC = () => {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-md border border-slate-300 text-sm font-semibold tracking-tight text-slate-900">
-              y
-            </div>
+            <Image src={logoIcon} alt="Devoyce" />
+
             <span className="text-sm font-semibold tracking-tight">
               Devoyce
             </span>
